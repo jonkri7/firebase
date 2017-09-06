@@ -14,14 +14,14 @@
       // [START authstatelistener]
       firebase.auth().onAuthStateChanged(function(user) {
         // [START_EXCLUDE silent]
-	        alert('funcion para ver status de usuario');
+	       document.getElementById('status2').textContent = 'en funcion status';
       
     }
 }
 
   
     window.onload = function() {
-      alert('al cargar');
+      document.getElementById('status').textContent = 'iniciando';
 	      initApp();
     };
   
