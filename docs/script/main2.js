@@ -21,6 +21,7 @@
 
   
     window.onload = function() {
-      initApp();
+      alert('al cargar');
+	      initApp();
     };
   
