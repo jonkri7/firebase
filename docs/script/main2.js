@@ -9,12 +9,12 @@
 		messagingSenderId: "343469521635"
 	  };
 	  firebase.initializeApp(config);
-          console.log("inicio");
+         
       // Listening for auth state changes.
       // [START authstatelistener]
       firebase.auth().onAuthStateChanged(function(user) {
         // [START_EXCLUDE silent]
-	        console.log("en funcion auth");
+	        alert('funcion para ver status de usuario');
       
     }
 }
