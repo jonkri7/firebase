@@ -124,11 +124,12 @@
 		messagingSenderId: "343469521635"
 	  };
 	  firebase.initializeApp(config);
-  
+          console.log("inicio");
       // Listening for auth state changes.
       // [START authstatelistener]
       firebase.auth().onAuthStateChanged(function(user) {
         // [START_EXCLUDE silent]
+	        console.log("en funcion auth");
         document.getElementById('quickstart-verify-email').disabled = true;
         // [END_EXCLUDE]
         if (user) {
